@@ -1,0 +1,41 @@
+{
+  "github.copilot.advanced": {
+  
+  },
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+      // Podstawowe ustawienia
+      "vim.easymotion": true,        // Szybka nawigacja
+      "vim.leader": "<space>",       // Klawisz leader
+      "vim.handleKeys": {            // Obsługa klawiszy
+          "<C-c>": false,
+          "<C-v>": false,
+          "<C-x>": false
+      },
+      
+      // Tryby Visual/Normal
+      "vim.visualstar": true,        // Wyszukiwanie zaznaczonego tekstu
+      "vim.useCtrlKeys": true,       // Włącz klawisze Control
+      
+      // Mapowanie klawiszy
+      "vim.normalModeKeyBindings": [
+          {
+              "before": ["<leader>", "w"],
+              "commands": ["workbench.action.files.save"]
+          },
+          {
+              "before": ["<leader>", "q"],
+              "commands": ["workbench.action.closeActiveEditor"]
+          }
+      ],
+      
+      // Zaawansowane funkcje
+      "vim.sneak": true,             // Dodatkowa nawigacja
+      "vim.surround": true,          // Obsługa nawiasów
+      "vim.smartRelativeLine": true, // Inteligentne numerowanie linii
+      "vim.highlightedyank": {       // Podświetlanie yanked tekstu
+          "enable": true,
+          "duration": 200
+      }
+}
